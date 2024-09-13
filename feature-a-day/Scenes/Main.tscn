@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=4 uid="uid://bmhhwi7jie1u5"]
+
+[ext_resource type="PackedScene" uid="uid://vwoosaqf0hnu" path="res://Scenes/Player.tscn" id="1_le42p"]
+[ext_resource type="Script" path="res://Scenes/Main.gd" id="1_y1ne1"]
+[ext_resource type="PackedScene" uid="uid://dbudg2tchyte4" path="res://Scenes/World.tscn" id="2_8eseq"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_y1ne1")
+
+[node name="Player" parent="." instance=ExtResource("1_le42p")]
+
+[node name="Collider Level" parent="." instance=ExtResource("2_8eseq")]
+tile_map_data = PackedByteArray("AAADAAAAAQABAAAAAAADAP//AQABAAAAAAACAP//AQAAAAAAAAACAAAAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQABAAAAAAACAAIAAQAAAAEAAAADAAIAAQABAAEAAAAEAP//AQACAAAAAAAEAAIAAQACAAEAAAAEAAEAAQACAAAAAAAEAAAAAQACAAAAAAA=")
